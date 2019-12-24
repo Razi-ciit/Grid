@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>learning flex</title>
+    <style>
+        .parent {
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+        }
+
+        .myf {
+            flex-grow: 1;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            margin: 2px;
+            display: flex;
+            /* text-align: center; */
+            justify-content: center;
+            border: 2px solid;
+            align-items: center;
+        }
+
+        .myf:nth-child(3) {
+            flex-grow: 2.5;
+        }
+
+        .myf:nth-child(2) {
+            background-color: chartreuse;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="myf">
+            <p>Apple</p>
+        </div>
+        <div class="myf">
+            <p>Banana</p>
+        </div>
+        <div class="myf">
+            <p>Mango</p>
+        </div>
+        <div class="myf">
+            <p>Pineapple</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

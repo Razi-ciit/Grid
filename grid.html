@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+    <style>
+    .parent{
+            display: grid;
+            border: 3px solid black;
+            grid-gap: 3px;
+            height: 400px;
+            width: 400px;
+            grid-template:
+            "area1 area2 area3"
+            "area4 area5 area5"
+            "area6 area5 area5"
+    }
+
+    .new:nth-child(1){
+        grid-area: area1;
+        background-color: chartreuse;
+    }
+    .new:nth-child(2){
+        grid-area: area2;
+        background-color: crimson;
+    }
+    .new:nth-child(3){
+        grid-area: area3;
+        background-color: darkgreen;
+    }
+    .new:nth-child(4){
+        grid-area: area4;
+        background-color: darkorange;
+    }
+    .new:nth-child(5){
+        grid-area: area5;
+        background-color: darkred;
+        
+    }
+    .new:nth-child(6){
+        grid-area: area6;
+        background-color: dimgray;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="new">A</div>
+        <div class="new">B</div>
+        <div class="new">C</div>
+        <div class="new">D</div>
+        <div class="new">E</div>
+        <div class="new">F</div>
+    </div>
+</body>
+</html>
